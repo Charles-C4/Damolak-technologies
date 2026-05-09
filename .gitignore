@@ -1,0 +1,174 @@
+# Terraform
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.*
+terraform.tfvars
+terraform.tfvars.json
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+.terraform/**/*
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+.env.production.local
+*.pem
+*.key
+*.pub
+
+# AWS Credentials
+~/.aws/credentials
+~/.aws/config
+.aws/
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+.vim/
+.emacs.d/
+*.iml
+
+# VS Code
+.vscode/**
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
+
+# Operating System
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+venv/
+ENV/
+env/
+.venv
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+.docker/
+
+# Local Development
+local/
+tmp/
+temp/
+*.tmp
+.cache/
+
+# Logs
+*.log
+logs/
+*.log*
+
+# Build artifacts
+dist/
+build/
+*.o
+*.a
+*.lib
+*.so
+
+# Test coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Secrets and credentials
+**/secrets/
+**/secret.txt
+**/*secret*
+**/*password*
+**/*token*
+**/*key*
+!.gitkeep
+
+# OS-specific
+.AppleDouble
+.LSOverride
+.TemporaryItems
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.vimrc
+.vimrc.local
+
+# Custom local folders
+.sixth/
+.local/
+
+# Temporary files
+*.bak
+*.backup
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# IDE metadata
+.editorconfig.local
+.project
+.settings/
+
+# GitHub Actions
+.github/workflows/*.log
+.github/workflows/debug/
+
+# Misc
+*.orig
+*.rej
+.fusebox/
+.rts2_cache_*
+.eslintcache
+.stylelintcache
