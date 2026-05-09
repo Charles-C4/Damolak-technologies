@@ -19,6 +19,10 @@ module "iam" {
   source = "./modules/iam"
 }
 
+module "monitoring" {
+  source = "./modules/monitoring"
+}
+
 module "alb" {
   source = "./modules/alb"
 

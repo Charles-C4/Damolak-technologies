@@ -2,6 +2,28 @@ data "aws_iam_role" "ecs_task_execution_role" {
   name = "ecsTaskExecutionRole"
 }
 
+# CloudWatch Logs Policy for ECS Task Execution Role
+resource "aws_iam_role_policy" "ecs_task_execution_logs_policy" {
+  name = "ecs-task-execution-logs-policy"
+  role = data.aws_iam_role.ecs_task_execution_role.id
+
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Sid    = "CloudWatchLogs"
+        Effect = "Allow"
+        Action = [
+          "logs:CreateLogGroup",
+          "logs:CreateLogStream",
+          "logs:PutLogEvents"
+        ]
+        Resource = "arn:aws:logs:*:*:*"
+      }
+    ]
+  })
+}
+
 # CI/CD Pipeline User
 resource "aws_iam_user" "cicd_user" {
   name = "devops-cicd-user"
