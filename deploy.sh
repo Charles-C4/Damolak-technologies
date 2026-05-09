@@ -1,3 +1,4 @@
+cd /home/charles/my-projects/Damolak-technologies/terraform
 #!/bin/bash
 
 REGION="us-east-1"
