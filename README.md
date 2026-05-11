@@ -559,7 +559,7 @@ This project addresses all evaluation criteria:
 
 ## 📞 Support
 
-### Here is the link to the loadbalancer: http://www.devops-alb-39584875.us-east-1.elb.amazonaws.com
+### Here is the link to the loadbalancer: http://devops-alb-39584875.us-east-1.elb.amazonaws.com
 For issues or questions:
 1. Check [Troubleshooting](#troubleshooting) section
 2. Review relevant guide: [CICD_SETUP.md](CICD_SETUP.md) or [MONITORING.md](MONITORING.md)
